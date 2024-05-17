@@ -29,7 +29,7 @@ cd "${DIR}/dl"
 if [ -f "${DIR}/dl/${rootfs_name}" ] ; then
     echo "File downloaded: ${DIR}/dl/${rootfs_name}"
 else
-    wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate $URL -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${fileid}" -O ${rootfs_name} && rm -rf /tmp/cookies.txt  || { cd "${DIR}" ; exit 1 ; }
+    wget "https://drive.usercontent.google.com/download?id=1kEco22WrjYhaFoAfxaGbd41blzu6kYSC&export=download&confirm=t"  -O ${rootfs_name}
 fi
 cd "${DIR}"
 exit 0 ;
