@@ -29,7 +29,7 @@ cd "${DIR}/dl"
 if [ -f "${DIR}/dl/${rootfs_name}" ] ; then
     echo "File downloaded: ${DIR}/dl/${rootfs_name}"
 else
-    wget "https://www.dropbox.com/scl/fi/gda270cg1iarugi5tcc5k/ubuntu-22.04-base-stm32mp1-armhf-16-05-2022.tar.gz?rlkey=6fd7yr7obl4ijqr3uqii1hgek&dl=0"  -O ${rootfs_name}dl
+    wget "https://www.dropbox.com/scl/fi/gda270cg1iarugi5tcc5k/ubuntu-22.04-base-stm32mp1-armhf-16-05-2022.tar.gz?rlkey=6fd7yr7obl4ijqr3uqii1hgek&dl=0"  -O ${rootfs_name}
 fi
 cd "${DIR}"
 exit 0 ;
